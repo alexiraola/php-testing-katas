@@ -1,0 +1,19 @@
+{
+  "name": "alex/kata-hexagonal",
+  "type": "project",
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Alex\\KataHexagonal\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Alex Iraola",
+      "email": "alex.iraola@gmail.com"
+    }
+  ]
+}
