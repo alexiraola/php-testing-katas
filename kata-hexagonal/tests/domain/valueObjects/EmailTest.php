@@ -1,6 +1,9 @@
 <?php
 
+namespace Tests\domain\valueObjects;
+
 use Alex\KataHexagonal\domain\valueObjects\Email;
+use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 class EmailTest extends TestCase
