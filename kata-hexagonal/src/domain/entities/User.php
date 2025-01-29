@@ -19,9 +19,19 @@ class User
         $this->password = $password;
     }
 
+    public function isMatchingId(Id $id): bool
+    {
+        return $this->id == $id;
+    }
+
     public function isMatchingPassword(Password $password): bool
     {
         return $this->password == $password;
+    }
+
+    public function isMatchingEmail(Email $email): bool
+    {
+        return $this->email == $email;
     }
 
     private function ensureIsDifferentPassword(Password $password): void
