@@ -1,0 +1,2662 @@
+2025-01-29 18:42:17 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-01-29 18:42:17 error: [Cake\Database\Exception\MissingExtensionException] Database driver `Cake\Database\Driver\Mysql` cannot be used due to a missing PHP extension or unmet dependency. Requested by connection `default` in /home/alex/Projects/php-testing-katas/kata-hexagonal-cake/vendor/cakephp/cakephp/src/Database/Connection.php on line 177
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+  'name' => 'default',
+)
+Stack Trace:
+- CORE/src/Database/Connection.php:127
+- CORE/src/Datasource/ConnectionRegistry.php:82
+- CORE/src/Core/ObjectRegistry.php:115
+- CORE/src/Datasource/ConnectionManager.php:212
+- ROOT/vendor/cakephp/debug_kit/src/Panel/SqlLogPanel.php:53
+- ROOT/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-01-29 20:47:36 warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2025-01-29 20:47:36 error: [Cake\Database\Exception\MissingExtensionException] Database driver `Cake\Database\Driver\Sqlite` cannot be used due to a missing PHP extension or unmet dependency. Requested by connection `default` in /home/alex/Projects/php-testing-katas/kata-hexagonal-cake/vendor/cakephp/cakephp/src/Database/Connection.php on line 177
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Sqlite',
+  'name' => 'default',
+)
+Stack Trace:
+- CORE/src/Database/Connection.php:127
+- CORE/src/Datasource/ConnectionRegistry.php:82
+- CORE/src/Core/ObjectRegistry.php:115
+- CORE/src/Datasource/ConnectionManager.php:212
+- ROOT/vendor/cakephp/debug_kit/src/Panel/SqlLogPanel.php:53
+- ROOT/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-01-29 21:10:22 error: [Cake\Controller\Exception\MissingActionException] Action `UsersController::index()` could not be found, or is not accessible. in /home/alex/Projects/php-testing-katas/kata-hexagonal-cake/vendor/cakephp/cakephp/src/Controller/Controller.php on line 480
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- CORE/src/Controller/ControllerFactory.php:161
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 21:11:33 error: [TypeError] App\Controller\UsersController::register(): Return value must be of type ?Cake\Http\Response, none returned in /home/alex/Projects/php-testing-katas/kata-hexagonal-cake/src/Controller/UsersController.php on line 15
+Stack Trace:
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 21:13:23 error: [TypeError] App\Controller\UsersController::register(): Return value must be of type ?Cake\Http\Response, none returned in /home/alex/Projects/php-testing-katas/kata-hexagonal-cake/src/Controller/UsersController.php on line 17
+Stack Trace:
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 21:31:38 error: [ArgumentCountError] Too few arguments to function toString(), 0 passed in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php on line 18 and exactly 1 expected in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Core/functions_global.php on line 209
+Stack Trace:
+- APP/Controller/UsersController.php:18
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 22:43:44 error: [TypeError] App\Controller\UsersController::__construct(): Argument #1 ($repository) must be of type App\Domain\Repositories\UserRepository, Cake\Http\ServerRequest given in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php on line 13
+Stack Trace:
+- [internal]:??
+- CORE/src/Controller/ControllerFactory.php:113
+- CORE/src/Http/BaseApplication.php:360
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 22:56:26 error: [InvalidArgumentException] Password must contain an underscore in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Domain/ValueObjects/Password.php on line 51
+Stack Trace:
+- APP/Domain/ValueObjects/Password.php:21
+- APP/Application/UserRegisterService.php:40
+- APP/Application/UserRegisterService.php:22
+- APP/Controller/UsersController.php:17
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 22:58:56 error: [TypeError] App\Controller\UsersController::register(): Return value must be of type ?Cake\Http\Response, none returned in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php on line 25
+Stack Trace:
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:00:03 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:00:24 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:01:22 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:01:31 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:01:41 error: [TypeError] App\Controller\UsersController::register(): Return value must be of type ?Cake\Http\Response, none returned in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php on line 24
+Stack Trace:
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:02:02 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:02:12 error: [TypeError] App\Controller\UsersController::register(): Return value must be of type ?Cake\Http\Response, none returned in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php on line 24
+Stack Trace:
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:02:39 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:03:12 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:26:25 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:32:56 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:33:04 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:34:01 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:35:17 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:35:43 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:38:06 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:38:59 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:39:26 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:40:48 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:45:24 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:45:33 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:46:10 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:47:53 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:47:56 error: [Cake\Controller\Exception\MissingComponentException] Component class `RequestHandlerComponent` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ComponentRegistry.php on line 124
+Exception Attributes: array (
+  'class' => 'RequestHandlerComponent',
+  'plugin' => NULL,
+)
+Stack Trace:
+- CORE/src/Core/ObjectRegistry.php:111
+- CORE/src/Controller/Controller.php:283
+- APP/Controller/UsersController.php:17
+- CORE/src/Controller/Controller.php:237
+- [internal]:??
+- CORE/src/Controller/ControllerFactory.php:111
+- CORE/src/Http/BaseApplication.php:360
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:159
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:48:06 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:48:44 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:49:46 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:50:30 error: [Cake\Controller\Exception\MissingComponentException] Component class `RequestHandlerComponent` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ComponentRegistry.php on line 124
+Stack Trace:
+- CORE/src/Core/ObjectRegistry.php:111
+- CORE/src/Controller/Controller.php:283
+- APP/Controller/UsersController.php:17
+- CORE/src/Controller/Controller.php:237
+- [internal]:??
+- CORE/src/Controller/ControllerFactory.php:111
+- CORE/src/Http/BaseApplication.php:360
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:50:50 error: [Cake\Http\Exception\InvalidCsrfTokenException] Missing or incorrect CSRF cookie type. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php on line 354
+Stack Trace:
+- CORE/src/Http/Middleware/CsrfProtectionMiddleware.php:165
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:52:44 error: [Cake\Controller\Exception\MissingComponentException] Component class `RequestHandlerComponent` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ComponentRegistry.php on line 124
+Stack Trace:
+- CORE/src/Core/ObjectRegistry.php:111
+- CORE/src/Controller/Controller.php:283
+- APP/Controller/UsersController.php:17
+- CORE/src/Controller/Controller.php:237
+- [internal]:??
+- CORE/src/Controller/ControllerFactory.php:111
+- CORE/src/Http/BaseApplication.php:360
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-29 23:53:44 error: [Cake\Controller\Exception\MissingComponentException] Component class `RequestHandlerComponent` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ComponentRegistry.php on line 124
+Stack Trace:
+- CORE/src/Core/ObjectRegistry.php:111
+- CORE/src/Controller/Controller.php:283
+- APP/Controller/UsersController.php:17
+- CORE/src/Controller/Controller.php:237
+- [internal]:??
+- CORE/src/Controller/ControllerFactory.php:111
+- CORE/src/Http/BaseApplication.php:360
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 06:45:12 error: [ArgumentCountError] Too few arguments to function App\Application::App\{closure}(), 0 passed and exactly 1 expected in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application.php on line 118
+Stack Trace:
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 06:45:16 error: [ArgumentCountError] Too few arguments to function App\Application::App\{closure}(), 0 passed and exactly 1 expected in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application.php on line 118
+Stack Trace:
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 06:45:25 error: [Cake\Http\Exception\NotFoundException] Please replace templates/Pages/home.php with your own version or re-enable debug mode. in /home/alex/Projects/php-testing-katas/kata-hexagonal/templates/Pages/home.php on line 54
+Stack Trace:
+- CORE/src/View/View.php:1188
+- CORE/src/View/View.php:1145
+- CORE/src/View/View.php:785
+- CORE/src/Controller/Controller.php:707
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-01-30 06:45:40 error: [ArgumentCountError] Too few arguments to function App\Application::App\{closure}(), 0 passed and exactly 1 expected in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application.php on line 118
+Stack Trace:
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 06:57:30 error: [Error] Using $this when not in object context in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/InMemoryUserRepository.php on line 22
+Stack Trace:
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:26:28 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:29:31 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:31:06 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:32:17 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:36:42 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:37:50 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:38:04 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:41:05 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:42:39 error: [Cake\Database\Exception\MissingExtensionException] Database driver `Cake\Database\Driver\Mysql` cannot be used due to a missing PHP extension or unmet dependency. Requested by connection `other` in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Database/Connection.php on line 177
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+  'name' => 'other',
+)
+Stack Trace:
+- CORE/src/Database/Connection.php:127
+- CORE/src/Datasource/ConnectionRegistry.php:82
+- CORE/src/Core/ObjectRegistry.php:115
+- CORE/src/Datasource/ConnectionManager.php:212
+- ROOT/vendor/cakephp/debug_kit/src/Panel/SqlLogPanel.php:53
+- ROOT/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-01-30 14:43:01 error: [Cake\Database\Exception\MissingExtensionException] Database driver `Cake\Database\Driver\Mysql` cannot be used due to a missing PHP extension or unmet dependency. Requested by connection `other` in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Database/Connection.php on line 177
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+  'name' => 'other',
+)
+Stack Trace:
+- CORE/src/Database/Connection.php:127
+- CORE/src/Datasource/ConnectionRegistry.php:82
+- CORE/src/Core/ObjectRegistry.php:115
+- CORE/src/Datasource/ConnectionManager.php:212
+- ROOT/vendor/cakephp/debug_kit/src/Panel/SqlLogPanel.php:53
+- ROOT/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-01-30 14:47:20 error: [Cake\Database\Exception\MissingExtensionException] Database driver `Cake\Database\Driver\Mysql` cannot be used due to a missing PHP extension or unmet dependency. Requested by connection `other` in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Database/Connection.php on line 177
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+  'name' => 'other',
+)
+Stack Trace:
+- CORE/src/Database/Connection.php:127
+- CORE/src/Datasource/ConnectionRegistry.php:82
+- CORE/src/Core/ObjectRegistry.php:115
+- CORE/src/Datasource/ConnectionManager.php:212
+- ROOT/vendor/cakephp/debug_kit/src/Panel/SqlLogPanel.php:53
+- ROOT/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-01-30 14:47:28 error: [Cake\Database\Exception\MissingExtensionException] Database driver `Cake\Database\Driver\Mysql` cannot be used due to a missing PHP extension or unmet dependency. Requested by connection `other` in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Database/Connection.php on line 177
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+  'name' => 'other',
+)
+Stack Trace:
+- CORE/src/Database/Connection.php:127
+- CORE/src/Datasource/ConnectionRegistry.php:82
+- CORE/src/Core/ObjectRegistry.php:115
+- CORE/src/Datasource/ConnectionManager.php:212
+- ROOT/vendor/cakephp/debug_kit/src/Panel/SqlLogPanel.php:53
+- ROOT/vendor/cakephp/debug_kit/src/ToolbarService.php:232
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:58
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-01-30 14:48:44 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Exception Attributes: array (
+  0 => 'for alias `users`',
+)
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:52:41 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Exception Attributes: array (
+  0 => 'for alias `users`',
+)
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:53:41 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:119
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 14:55:15 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 17:48:28 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 17:50:09 error: [Cake\Http\Exception\MissingControllerException] Controller class `DebugKit` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 335
+Stack Trace:
+- CORE/src/Controller/ControllerFactory.php:77
+- CORE/src/Http/BaseApplication.php:360
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /debug-kit/toolbar/ad57b592-fdc8-4269-bdc1-02a50af74ca3
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+2025-01-30 17:50:12 error: [Cake\Http\Exception\NotFoundException] Please replace templates/Pages/home.php with your own version or re-enable debug mode. in /home/alex/Projects/php-testing-katas/kata-hexagonal/templates/Pages/home.php on line 54
+Stack Trace:
+- CORE/src/View/View.php:1188
+- CORE/src/View/View.php:1145
+- CORE/src/View/View.php:785
+- CORE/src/Controller/Controller.php:707
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-01-30 17:50:29 error: [Cake\Http\Exception\NotFoundException] Please replace templates/Pages/home.php with your own version or re-enable debug mode. in /home/alex/Projects/php-testing-katas/kata-hexagonal/templates/Pages/home.php on line 54
+Stack Trace:
+- CORE/src/View/View.php:1188
+- CORE/src/View/View.php:1145
+- CORE/src/View/View.php:785
+- CORE/src/Controller/Controller.php:707
+- APP/Controller/PagesController.php:65
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:157
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /
+Client IP: 127.0.0.1
+2025-01-30 17:55:47 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 17:56:11 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:05:14 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Exception Attributes: array (
+  0 => 'for alias `users`',
+)
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- ROOT/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:05:27 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:06:07 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:18
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:09:00 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:18
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:10:54 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:17:53 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `users` could not be found. in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Stack Trace:
+- CORE/src/Datasource/Locator/AbstractLocator.php:68
+- CORE/src/ORM/Locator/TableLocator.php:212
+- APP/Infrastructure/CakeUserRepository.php:19
+- APP/Application.php:118
+- [internal]:??
+- ROOT/vendor/league/container/src/Definition/Definition.php:222
+- ROOT/vendor/league/container/src/Definition/Definition.php:172
+- ROOT/vendor/league/container/src/Definition/Definition.php:164
+- ROOT/vendor/league/container/src/Definition/DefinitionAggregate.php:83
+- ROOT/vendor/league/container/src/Container.php:175
+- ROOT/vendor/league/container/src/Container.php:118
+- CORE/src/Controller/ControllerFactory.php:194
+- CORE/src/Controller/ControllerFactory.php:162
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:27:52 error: [Error] Call to a member function prepare() on null in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php on line 73
+Stack Trace:
+- APP/Application/UserRegisterService.php:33
+- APP/Application/UserRegisterService.php:22
+- APP/Controller/UsersController.php:29
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:28:29 error: [Error] Call to undefined method Cake\Database\Connection::prepare() in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php on line 73
+Stack Trace:
+- APP/Application/UserRegisterService.php:33
+- APP/Application/UserRegisterService.php:22
+- APP/Controller/UsersController.php:29
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:32:08 warning: Attempt to read property "id" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 35
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:32:08 warning: Attempt to read property "email" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 36
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:32:08 warning: Attempt to read property "password" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 37
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:32:11 warning: Attempt to read property "id" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 35
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:32:11 warning: Attempt to read property "email" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 36
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:32:11 warning: Attempt to read property "password" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 37
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:32:15 warning: Attempt to read property "id" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 35
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:32:15 warning: Attempt to read property "email" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 36
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:32:15 warning: Attempt to read property "password" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 37
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:33:57 warning: Attempt to read property "id" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 35
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:33:57 warning: Attempt to read property "email" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 36
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:33:57 warning: Attempt to read property "password" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 37
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:33:57 error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: users.id in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Database/Statement/Statement.php on line 146
+Stack Trace:
+- CORE/src/Database/Statement/Statement.php:146
+- CORE/src/Database/Statement/SqliteStatement.php:38
+- APP/Infrastructure/CakeUserRepository.php:38
+- APP/Application/UserRegisterService.php:24
+- APP/Controller/UsersController.php:29
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:34:06 warning: Attempt to read property "id" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 35
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:34:06 warning: Attempt to read property "email" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 36
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:34:06 warning: Attempt to read property "password" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 37
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:34:06 error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: users.id in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Database/Statement/Statement.php on line 146
+Stack Trace:
+- CORE/src/Database/Statement/Statement.php:146
+- CORE/src/Database/Statement/SqliteStatement.php:38
+- APP/Infrastructure/CakeUserRepository.php:38
+- APP/Application/UserRegisterService.php:24
+- APP/Controller/UsersController.php:29
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:38:15 warning: Attempt to read property "id" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 35
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:38:15 warning: Attempt to read property "email" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 36
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:38:15 warning: Attempt to read property "password" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 37
+App\Infrastructure\CakeUserRepository->save() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 24
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:38:15 error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: users.id in /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Database/Statement/Statement.php on line 146
+Stack Trace:
+- CORE/src/Database/Statement/Statement.php:146
+- CORE/src/Database/Statement/SqliteStatement.php:38
+- APP/Infrastructure/CakeUserRepository.php:38
+- APP/Application/UserRegisterService.php:24
+- APP/Controller/UsersController.php:29
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:42:27 warning: Attempt to read property "id" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 85
+App\Infrastructure\CakeUserRepository->findByEmail() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 33
+App\Application\UserRegisterService->ensureThatUserDoesNotExist() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 22
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:42:27 error: [TypeError] App\Domain\ValueObjects\Id::createFrom(): Argument #1 ($id) must be of type string, null given, called in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php on line 85 in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Domain/ValueObjects/Id.php on line 24
+Stack Trace:
+- APP/Infrastructure/CakeUserRepository.php:85
+- APP/Application/UserRegisterService.php:33
+- APP/Application/UserRegisterService.php:22
+- APP/Controller/UsersController.php:29
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:43:06 warning: Attempt to read property "id" on array
+Request URL: /users/register
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\ErrorTrap->handleError() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php, line 87
+App\Infrastructure\CakeUserRepository->findByEmail() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 33
+App\Application\UserRegisterService->ensureThatUserDoesNotExist() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php, line 22
+App\Application\UserRegisterService->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Controller/UsersController.php, line 29
+App\Controller\UsersController->register() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/Controller.php, line 500
+Cake\Controller\Controller->invokeAction() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 166
+Cake\Controller\ControllerFactory->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 141
+Cake\Controller\ControllerFactory->invoke() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 362
+Cake\Http\BaseApplication->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 86
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 172
+Cake\Http\Middleware\BodyParserMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 82
+Cake\Http\Runner->handle() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Runner.php, line 60
+Cake\Http\Runner->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/vendor/cakephp/cakephp/src/Http/Server.php, line 104
+Cake\Http\Server->run() /home/alex/Projects/php-testing-katas/kata-hexagonal/webroot/index.php, line 37
+[main]
+
+2025-01-30 18:43:06 error: [TypeError] App\Domain\ValueObjects\Id::createFrom(): Argument #1 ($id) must be of type string, null given, called in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php on line 87 in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Domain/ValueObjects/Id.php on line 24
+Stack Trace:
+- APP/Infrastructure/CakeUserRepository.php:87
+- APP/Application/UserRegisterService.php:33
+- APP/Application/UserRegisterService.php:22
+- APP/Controller/UsersController.php:29
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:43:54 error: [TypeError] App\Domain\Entities\User::__construct(): Argument #1 ($id) must be of type App\Domain\ValueObjects\Id, App\Domain\ValueObjects\Email given, called in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Infrastructure/CakeUserRepository.php on line 88 in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Domain/Entities/User.php on line 12
+Stack Trace:
+- APP/Infrastructure/CakeUserRepository.php:88
+- APP/Application/UserRegisterService.php:33
+- APP/Application/UserRegisterService.php:22
+- APP/Controller/UsersController.php:29
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1
+2025-01-30 18:44:26 error: [InvalidArgumentException] A user already exists with this email in /home/alex/Projects/php-testing-katas/kata-hexagonal/src/Application/UserRegisterService.php on line 36
+Stack Trace:
+- APP/Application/UserRegisterService.php:22
+- APP/Controller/UsersController.php:29
+- CORE/src/Controller/Controller.php:500
+- CORE/src/Controller/ControllerFactory.php:166
+- CORE/src/Controller/ControllerFactory.php:141
+- CORE/src/Http/BaseApplication.php:362
+- CORE/src/Http/Runner.php:86
+- CORE/src/Http/Middleware/BodyParserMiddleware.php:172
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/RoutingMiddleware.php:118
+- CORE/src/Http/Runner.php:82
+- CORE/src/Routing/Middleware/AssetMiddleware.php:69
+- CORE/src/Http/Runner.php:82
+- CORE/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- CORE/src/Http/Runner.php:82
+- CORE/src/Http/Runner.php:60
+- CORE/src/Http/Server.php:104
+- ROOT/webroot/index.php:37
+- [main]:
+
+Request URL: /users/register
+Client IP: 127.0.0.1

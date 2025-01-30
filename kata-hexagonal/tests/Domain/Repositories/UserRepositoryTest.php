@@ -1,0 +1,73 @@
+<?php
+
+namespace App\Test\Domain\Repositories;
+
+use App\Domain\Entities\User;
+use App\Domain\ValueObjects\Email;
+use App\Domain\ValueObjects\Id;
+use App\Domain\ValueObjects\Password;
+use App\Infrastructure\InMemoryUserRepository;
+use PHPUnit\Framework\TestCase;
+
+class UserRepositoryTest extends TestCase
+{
+    public function testFindsAUserById(): void
+    {
+        $repository = new InMemoryUserRepository();
+        $id = Id::generateUniqueIdentifier();
+        $user = createUserById($id);
+
+        $repository->save($user);
+
+        $foundUser = $repository->findById($id);
+
+        $this->assertEquals($user, $foundUser);
+    }
+
+    public function testDoesNotFindANonExistingUserById(): void
+    {
+        $repository = new InMemoryUserRepository();
+        $id = Id::generateUniqueIdentifier();
+
+        $foundUser = $repository->findById($id);
+
+        $this->assertNull($foundUser);
+    }
+
+    public function testItFindsAUserByEmail(): void
+    {
+        $repository = new InMemoryUserRepository();
+        $email = Email::create("test@example.com");
+        $user = createUserByEmail($email);
+
+        $repository->save($user);
+
+        $foundUser = $repository->findByEmail($email);
+
+        $this->assertEquals($user, $foundUser);
+    }
+
+    public function testDoesNotFindANonExistingUserByEmail(): void
+    {
+        $repository = new InMemoryUserRepository();
+        $email = Email::create("test@example.com");
+
+        $foundUser = $repository->findByEmail($email);
+
+        $this->assertNull($foundUser);
+    }
+}
+
+function createUserById(Id $id): User
+{
+    $email = Email::create("test@example.com");
+    $password = Password::createFromPlainText("SecurePass123_");
+    return new User($id, $email, $password);
+}
+
+function createUserByEmail(Email $email): User
+{
+    $id = Id::generateUniqueIdentifier();
+    $password = Password::createFromPlainText("SecurePass123_");
+    return new User($id, $email, $password);
+}

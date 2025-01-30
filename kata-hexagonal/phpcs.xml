@@ -1,13 +1,15 @@
 <?xml version="1.0"?>
-<ruleset name="Custom Ruleset">
-    <description>Custom ruleset to suppress doc comment warnings.</description>
-
-    <!-- Include your standard (e.g., PSR12) -->
-    <rule ref="PSR12"/>
+<ruleset name="App">
+    <config name="installed_paths" value="../../cakephp/cakephp-codesniffer"/>
 
     <!-- Exclude doc comment warnings -->
     <rule ref="Generic.Commenting.DocComment">
         <exclude name="Generic.Commenting.DocComment.Missing"/>
+    <rule ref="CakePHP"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint">
+        <exclude-pattern>*/src/Controller/*</exclude-pattern>
     </rule>
-</ruleset>
 
+    <file>src/</file>
+    <file>tests/</file>
+</ruleset>
