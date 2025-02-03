@@ -6,35 +6,27 @@ use App\Application\UserRegisterService;
 use App\Application\dtos\UserRegisterRequest;
 use App\Domain\ValueObjects\Email;
 use App\Infrastructure\InMemoryUserRepository;
-use PHPUnit\Framework\TestCase;
 
-class UserRegisterServiceTest extends TestCase
-{
-    public function testRegistersANewUserSuccessfullyWhenGivenCredentialsAreValid(): void
-    {
-        $repository = new InMemoryUserRepository();
-        $service = new UserRegisterService($repository);
+it('registers anew user successfully when given credentials are valid', function () {
+    $repository = new InMemoryUserRepository();
+    $service = new UserRegisterService($repository);
 
-        $service->register(createRegisterRequest());
+    $service->register(createRegisterRequest());
 
-        $expectedEmail = Email::create(createRegisterRequest()->email);
+    $expectedEmail = Email::create(createRegisterRequest()->email);
 
-        $foundUser = $repository->findByEmail($expectedEmail);
+    $foundUser = $repository->findByEmail($expectedEmail);
 
-        $this->assertTrue($foundUser->isMatchingEmail($expectedEmail));
-    }
+    expect($foundUser->isMatchingEmail($expectedEmail))->toBeTrue();
+});
 
-    public function testDoesNotAllowToRegisterANewUserWhenAnotherOneWithTheSameEmailAlreadyExists(): void
-    {
-        $repository = new InMemoryUserRepository();
-        $service = new UserRegisterService($repository);
+it('does not allow to register anew user when another one with the same email already exists', function () {
+    $repository = new InMemoryUserRepository();
+    $service = new UserRegisterService($repository);
 
-        $this->expectExceptionMessage("A user already exists with this email");
-
-        $service->register(createRegisterRequest());
-        $service->register(createRegisterRequest());
-    }
-}
+    $service->register(createRegisterRequest());
+    $service->register(createRegisterRequest());
+})->throws("A user already exists with this email");
 
 function createRegisterRequest(): UserRegisterRequest
 {

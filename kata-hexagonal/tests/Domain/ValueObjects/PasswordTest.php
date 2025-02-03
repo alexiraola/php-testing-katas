@@ -3,81 +3,61 @@
 namespace App\Test\Domain\ValueObjects;
 
 use App\Domain\ValueObjects\Password;
-use PHPUnit\Framework\TestCase;
 
-class PasswordTest extends TestCase
-{
-    public function testCreatesAPasswordWhenTheGivenValueMeetsTheRequirementsForAStrongPassword(): void
-    {
-        $password = Password::createFromPlainText("SecurePass123_");
+  it('creates apassword when the given value meets the requirements for astrong password', function () {
+      $password = Password::createFromPlainText("SecurePass123_");
 
-        $this->assertIsObject($password);
-    }
+      expect($password)->toBeObject();
+  });
 
-    public function testFailsWhenThePasswordIsTooShort(): void
-    {
-        $this->expectExceptionMessage("Password is too short");
-        $password = Password::createFromPlainText("1aaA_");
-    }
+  it('fails when the password is too short', function () {
+      $password = Password::createFromPlainText("1aaA_");
+  })->throws("Password is too short");
 
-    public function testFailsWhenThePasswordIsMissingANumber(): void
-    {
-        $this->expectExceptionMessage("Password must contain a number");
-        $password = Password::createFromPlainText("aaaaaA_");
-    }
+  it('fails when the password is missing anumber', function () {
+      $password = Password::createFromPlainText("aaaaaA_");
+  })->throws("Password must contain a number");
 
-    public function testFailsWhenThePasswordIsMissingALowercase(): void
-    {
-        $this->expectExceptionMessage("Password must contain a lowercase");
-        $password = Password::createFromPlainText("A1234_");
-    }
+  it('fails when the password is missing alowercase', function () {
+      $password = Password::createFromPlainText("A1234_");
+  })->throws("Password must contain a lowercase");
 
-    public function testFailsWhenThePasswordIsMissingAnUppercase(): void
-    {
-        $this->expectExceptionMessage("Password must contain an uppercase");
-        $password = Password::createFromPlainText("a1234_");
-    }
+  it('fails when the password is missing an uppercase', function () {
+      $password = Password::createFromPlainText("a1234_");
+  })->throws("Password must contain an uppercase");
 
-    public function testFailsWhenThePasswordIsMissingAnUnderscore(): void
-    {
-        $this->expectExceptionMessage("Password must contain an underscore");
-        $password = Password::createFromPlainText("aA12345");
-    }
+  it('fails when the password is missing an underscore', function () {
+      $password = Password::createFromPlainText("aA12345");
+  })->throws("Password must contain an underscore");
 
-    public function testFailsWhenThePasswordIsMissingSeveralRequirements(): void
-    {
-        $this->expectExceptionMessage("Password is too short, must contain a number, must contain an uppercase, must contain an underscore");
-        $password = Password::createFromPlainText("abc");
-    }
+  it('fails when the password is missing several requirements', function () {
+      $password = Password::createFromPlainText("abc");
+  })->throws("Password is too short, must contain a number, must contain an uppercase, must contain an underscore");
 
-    public function testEnsuresPasswordIsHashed(): void
-    {
-        $plaintext = "SecurePass123_";
-        $password = Password::createFromPlainText($plaintext);
-        $hashedValue = $password->toString();
+  it('ensures password is hashed', function () {
+      $plaintext = "SecurePass123_";
+      $password = Password::createFromPlainText($plaintext);
+      $hashedValue = $password->toString();
 
-        $this->assertNotEquals($hashedValue, $plaintext);
-        $this->assertEquals(strlen($hashedValue), 64);
-        $this->assertTrue(isHashed($hashedValue));
-    }
+      expect($hashedValue)->not()->toEqual($plaintext);
+      expect(64)->toEqual(strlen($hashedValue));
+      expect(isHashed($hashedValue))->toBeTrue();
+  });
 
-    public function testMatchesWhenSomeGivenPasswordsAreTheSame(): void
-    {
-        $plaintext = "SecurePass123_";
-        $aPassword = Password::createFromPlainText($plaintext);
-        $anotherPassword = Password::createFromPlainText($plaintext);
+  it('matches when some given passwords are the same', function () {
+      $plaintext = "SecurePass123_";
+      $aPassword = Password::createFromPlainText($plaintext);
+      $anotherPassword = Password::createFromPlainText($plaintext);
 
-        $this->assertEquals($aPassword, $anotherPassword);
-    }
+      expect($anotherPassword)->toEqual($aPassword);
+  });
 
-    public function testDoesNotMatchWhenSomeGivenPasswordsAreDifferent(): void
-    {
-        $aPassword = Password::createFromPlainText("SecurePass123_");
-        $anotherPassword = Password::createFromPlainText("DifferentPass123_");
+  it('does not match when some given passwords are different', function () {
+      $aPassword = Password::createFromPlainText("SecurePass123_");
+      $anotherPassword = Password::createFromPlainText("DifferentPass123_");
 
-        $this->assertNotEquals($aPassword, $anotherPassword);
-    }
-}
+      expect($aPassword)->not()->toEqual($anotherPassword);
+  });
 
 function isHashed(string $hashedValue): bool
 {

@@ -11,20 +11,6 @@ class InMemoryUserRepository implements UserRepository
 {
     private $users = [];
 
-    private static InMemoryUserRepository $instance;
-
-    private function __construct()
-    {
-    }
-
-    public static function getInstance(): InMemoryUserRepository
-    {
-        if (!$this->instance) {
-            $this->instance = new InMemoryUserRepository();
-        }
-        return $this->instance;
-    }
-
     public function save(User $user): void
     {
         $this->users[] = $user;

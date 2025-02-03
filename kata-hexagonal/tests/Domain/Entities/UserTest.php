@@ -6,31 +6,23 @@ use App\Domain\Entities\User;
 use App\Domain\ValueObjects\Email;
 use App\Domain\ValueObjects\Id;
 use App\Domain\ValueObjects\Password;
-use PHPUnit\Framework\TestCase;
 
-class UserTest extends TestCase
-{
-    public function testChangesThePasswordWhenADifferentOneIsProvided(): void
-    {
-        $initialPassword = Password::createFromPlainText("Safepass123_");
-        $user = createUser($initialPassword);
-        $newPassword = Password::createFromPlainText("AnotherSafepass123_");
+it('changes the password when adifferent one is provided', function () {
+    $initialPassword = Password::createFromPlainText("Safepass123_");
+    $user = createUser($initialPassword);
+    $newPassword = Password::createFromPlainText("AnotherSafepass123_");
 
-        $user->changePassword($newPassword);
+    $user->changePassword($newPassword);
 
-        $this->assertTrue($user->isMatchingPassword($newPassword));
-    }
+    expect($user->isMatchingPassword($newPassword))->toBeTrue();
+});
 
-    public function testDoesNotAllowToChangeThePasswordWhenTheGivenOneIsTheSame(): void
-    {
-        $initialPassword = Password::createFromPlainText("Safepass123_");
-        $user = createUser($initialPassword);
+it('does not allow to change the password when the given one is the same', function () {
+    $initialPassword = Password::createFromPlainText("Safepass123_");
+    $user = createUser($initialPassword);
 
-        $this->expectExceptionMessage("New password must be different");
-
-        $user->changePassword($initialPassword);
-    }
-}
+    $user->changePassword($initialPassword);
+})->throws("New password must be different");
 
 function createUser(Password $password): User
 {

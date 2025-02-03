@@ -4,51 +4,38 @@ namespace App\Test\Domain\ValueObjects;
 
 use App\Domain\Common\Uuid;
 use App\Domain\ValueObjects\Id;
-use PHPUnit\Framework\TestCase;
 
-class IdTest extends TestCase
-{
-    public function testGeneratesAValidIdentifier(): void
-    {
-        $id = Id::generateUniqueIdentifier();
+it('generates avalid identifier', function () {
+    $id = Id::generateUniqueIdentifier();
 
-        $this->assertTrue(isUuid($id));
-    }
+    expect(isUuid($id))->toBeTrue();
+});
 
-    public function testCreatesAnIdFromAGivenValidIdentifier(): void
-    {
-        $validId = Uuid::generateUuidV4();
-        $id = Id::createFrom($validId);
+it('creates an id from agiven valid identifier', function () {
+    $validId = Uuid::generateUuidV4();
+    $id = Id::createFrom($validId);
 
-        $this->assertEquals($id->toString(), $validId);
-    }
+    expect($validId)->toEqual($id->toString());
+});
 
-    public function testDoesNotAllowToCreateAnIdFromAGivenInvalidIdentifier(): void
-    {
-        $invalidId = "invalid-id";
+it('does not allow to create an id from agiven invalid identifier', function () {
+    Id::createFrom("invalid-id");
+})->throws("Invalid Id format");
 
-        $this->expectExceptionMessage("Invalid Id format");
+it('identifies two identical identifiers as equal', function () {
+    $validId = Uuid::generateUuidV4();
+    $id1 = Id::createFrom($validId);
+    $id2 = Id::createFrom($validId);
 
-        Id::createFrom($invalidId);
-    }
+    expect($id2)->toEqual($id1);
+});
 
-    public function testIdentifiesTwoIdenticalIdentifiersAsEqual(): void
-    {
-        $validId = Uuid::generateUuidV4();
-        $id1 = Id::createFrom($validId);
-        $id2 = Id::createFrom($validId);
+it('identifies two different identifiers as not equal', function () {
+    $id1 = Id::createFrom(Uuid::generateUuidV4());
+    $id2 = Id::createFrom(Uuid::generateUuidV4());
 
-        $this->assertEquals($id1, $id2);
-    }
-
-    public function testIdentifiesTwoDifferentIdentifiersAsNotEqual(): void
-    {
-        $id1 = Id::createFrom(Uuid::generateUuidV4());
-        $id2 = Id::createFrom(Uuid::generateUuidV4());
-
-        $this->assertNotEquals($id1, $id2);
-    }
-}
+    expect($id1)->not()->toEqual($id2);
+});
 
 function isUuid(Id $id): bool
 {

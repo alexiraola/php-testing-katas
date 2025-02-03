@@ -4,36 +4,26 @@ namespace App\Test\Domain\ValueObjects;
 
 use App\Domain\ValueObjects\Email;
 use InvalidArgumentException;
-use PHPUnit\Framework\TestCase;
 
-class EmailTest extends TestCase
-{
-    public function testCreatesAnEmailForAGivenAddressInACorrectFormat(): void
-    {
-        $email = Email::create("example@example.com");
-        $this->assertEquals("example@example.com", $email->toString());
-    }
+it('creates an email for agiven address in acorrect format', function () {
+    $email = Email::create("example@example.com");
+    expect($email->toString())->toEqual("example@example.com");
+});
 
-    public function testDoesNotAllowCreatingAnEmailForAGivenIncorrectlyFormattedAddress(): void
-    {
-        $this->expectException(InvalidArgumentException::class);
+it('does not allow creating an email for agiven incorrectly formatted address', function () {
+    $email = Email::create("invalid");
+})->throws(InvalidArgumentException::class);
 
-        $email = Email::create("invalid");
-    }
+it('considers two emails with the same address as equal', function () {
+    $aEmail = Email::create("example@example.com");
+    $otherEmail = Email::create("example@example.com");
 
-    public function testConsidersTwoEmailsWithTheSameAddressAsEqual(): void
-    {
-        $aEmail = Email::create("example@example.com");
-        $otherEmail = Email::create("example@example.com");
+    expect($otherEmail)->toEqual($aEmail);
+});
 
-        $this->assertEquals($aEmail, $otherEmail);
-    }
+it('differentiates between two emails with different address', function () {
+    $aEmail = Email::create("example@example.com");
+    $otherEmail = Email::create("anotherexample@example.com");
 
-    public function testDifferentiatesBetweenTwoEmailsWithDifferentAddress(): void
-    {
-        $aEmail = Email::create("example@example.com");
-        $otherEmail = Email::create("anotherexample@example.com");
-
-        $this->assertNotEquals($aEmail, $otherEmail);
-    }
-}
+    expect($aEmail)->not()->toEqual($otherEmail);
+});

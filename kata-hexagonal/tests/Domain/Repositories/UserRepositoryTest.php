@@ -7,56 +7,48 @@ use App\Domain\ValueObjects\Email;
 use App\Domain\ValueObjects\Id;
 use App\Domain\ValueObjects\Password;
 use App\Infrastructure\InMemoryUserRepository;
-use PHPUnit\Framework\TestCase;
 
-class UserRepositoryTest extends TestCase
-{
-    public function testFindsAUserById(): void
-    {
-        $repository = new InMemoryUserRepository();
-        $id = Id::generateUniqueIdentifier();
-        $user = createUserById($id);
+it('finds auser by id', function () {
+    $repository = new InMemoryUserRepository();
+    $id = Id::generateUniqueIdentifier();
+    $user = createUserById($id);
 
-        $repository->save($user);
+    $repository->save($user);
 
-        $foundUser = $repository->findById($id);
+    $foundUser = $repository->findById($id);
 
-        $this->assertEquals($user, $foundUser);
-    }
+    expect($foundUser)->toEqual($user);
+});
 
-    public function testDoesNotFindANonExistingUserById(): void
-    {
-        $repository = new InMemoryUserRepository();
-        $id = Id::generateUniqueIdentifier();
+it('does not find anon existing user by id', function () {
+    $repository = new InMemoryUserRepository();
+    $id = Id::generateUniqueIdentifier();
 
-        $foundUser = $repository->findById($id);
+    $foundUser = $repository->findById($id);
 
-        $this->assertNull($foundUser);
-    }
+    expect($foundUser)->toBeNull();
+});
 
-    public function testItFindsAUserByEmail(): void
-    {
-        $repository = new InMemoryUserRepository();
-        $email = Email::create("test@example.com");
-        $user = createUserByEmail($email);
+it('it finds auser by email', function () {
+    $repository = new InMemoryUserRepository();
+    $email = Email::create("test@example.com");
+    $user = createUserByEmail($email);
 
-        $repository->save($user);
+    $repository->save($user);
 
-        $foundUser = $repository->findByEmail($email);
+    $foundUser = $repository->findByEmail($email);
 
-        $this->assertEquals($user, $foundUser);
-    }
+    expect($foundUser)->toEqual($user);
+});
 
-    public function testDoesNotFindANonExistingUserByEmail(): void
-    {
-        $repository = new InMemoryUserRepository();
-        $email = Email::create("test@example.com");
+it('does not find anon existing user by email', function () {
+    $repository = new InMemoryUserRepository();
+    $email = Email::create("test@example.com");
 
-        $foundUser = $repository->findByEmail($email);
+    $foundUser = $repository->findByEmail($email);
 
-        $this->assertNull($foundUser);
-    }
-}
+    expect($foundUser)->toBeNull();
+});
 
 function createUserById(Id $id): User
 {

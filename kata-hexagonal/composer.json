@@ -16,7 +16,8 @@
         "cakephp/cakephp-codesniffer": "^5.0",
         "cakephp/debug_kit": "^5.0.0",
         "josegonzalez/dotenv": "^4.0",
-        "phpunit/phpunit": "^10.5.5 || ^11.1.3"
+        "pestphp/pest": "^3.7",
+        "pestphp/pest-plugin-drift": "^3.0"
     },
     "suggest": {
         "cakephp/repl": "Console tools for a REPL interface for CakePHP applications.",
@@ -38,7 +39,8 @@
     "config": {
         "allow-plugins": {
             "cakephp/plugin-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "pestphp/pest-plugin": true
         },
         "platform-check": true,
         "sort-packages": true
