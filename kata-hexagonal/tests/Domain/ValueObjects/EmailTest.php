@@ -10,9 +10,10 @@ it('creates an email for agiven address in acorrect format', function () {
     expect($email->toString())->toEqual("example@example.com");
 });
 
-it('does not allow creating an email for agiven incorrectly formatted address', function () {
-    $email = Email::create("invalid");
-})->throws(InvalidArgumentException::class);
+it('does not allow creating an email for agiven incorrectly formatted address', function (string $email) {
+    $email = Email::create($email);
+})->with(["invalid", "test@examplecom", "testexample.com"])
+  ->throws(InvalidArgumentException::class);
 
 it('considers two emails with the same address as equal', function () {
     $aEmail = Email::create("example@example.com");
